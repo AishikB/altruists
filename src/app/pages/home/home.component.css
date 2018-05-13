@@ -1,0 +1,37 @@
+.vertical-divider {
+    border-top-width: 0;
+  border-right-width: 1px;
+  border-right-style: solid;
+  height: 100%;
+}
+
+.sidenav-end {
+    background-color:red;
+    width:40%;
+}
+
+body  {
+    background-image: url(https://www.globalgiving.org/pfil/20057/pict_original.jpg);
+    background-color: #cccccc;
+    height: 500px;
+    -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+    -webkit-filter: brightness(0.7);
+    background-repeat: no-repeat;
+    background-repeat: no-repeat;
+    filter: blur(1px);
+}
+/* 
+body:after {
+    content: "";
+    position: fixed;
+    top: 0; bottom: 0; left: 0; right: 0; 
+    background: hsla(18,0%,0%,0.25);
+    pointer-events: none;
+  } */
+
+  body:after {
+    background: rgba(0,0,0,0.1);
+  }

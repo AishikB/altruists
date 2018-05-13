@@ -1,0 +1,42 @@
+.header_1 {
+    background-color: #160238;
+    color: white;
+    height: 90px;
+    padding-top: 14px;
+    font-size: 40px;
+    font-family: cursive;
+}
+
+.header_2 {
+    background-color: #F3882A;
+    color: white;
+    padding-top: 7px;
+    height: 45px;
+}
+
+.toolbar-menu {
+    padding-right: 3%;
+        display: inline-flex;
+        vertical-align: middle;
+        align-items: center;
+     
+}
+
+.menu-text:hover {
+    color:#8BABBC;
+   
+}
+
+.menu-text {
+    cursor: pointer;
+    padding-left: 7px;
+}
+
+.text-adjust {
+    padding-bottom: 5px;
+}
+
+.logo {
+    height: 70px;
+    padding-right: 2%;
+}
