@@ -1,6 +1,16 @@
 .footer_1 {
-    background-color: #3577D6;
+    background-color: #1EF5B1;
     color: white;
     height: 200px;
    
+}
+
+div {
+    font-family: Tangerine;
+    color:black;
+
+}
+
+.btn {
+    color: black;
 }

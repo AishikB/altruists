@@ -17,6 +17,8 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { FooterComponent } from './common/footer/footer.component';
 import {MatCardModule} from '@angular/material/card';
 import {HttpClientModule} from '@angular/common/http';
+import {MatGridListModule} from '@angular/material/grid-list';
+
 
 const appRoutes: Routes = [
   { path: '', component: HomeComponent },
@@ -44,7 +46,8 @@ const appRoutes: Routes = [
     MatListModule,
     MatSidenavModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatGridListModule
   ],
   exports: [
     MatToolbarModule,
@@ -54,7 +57,8 @@ const appRoutes: Routes = [
     MatDividerModule,
     MatListModule,
     MatSidenavModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
