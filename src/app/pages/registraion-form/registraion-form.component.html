@@ -1,0 +1,115 @@
+
+<mat-card>
+<mat-tab-group>
+  <mat-tab label="New Donor">
+    <mat-card>
+    <form [formGroup]="registrationForm">
+        <!-- <mat-form-field class="full-width-uname">
+            <input matInput placeholder="User name" formControlName = "userName" minlength = "5"  (blur)="checkUserNameAvailability($event)">
+            <mat-error *ngIf="registrationForm.get('userName').invalid">User name length should be atleast 5</mat-error>
+          </mat-form-field> -->
+    <mat-grid-list cols="2" rowHeight="70" >
+       
+      <mat-grid-tile class="grid-tile-style">
+          <mat-form-field class="full-width">
+              <input matInput placeholder="First name" formControlName = "firstName">
+              <mat-error *ngIf="registrationForm.get('firstName').invalid">First name is required</mat-error>
+            </mat-form-field>
+      </mat-grid-tile>
+      <mat-grid-tile class="grid-tile-style">
+          <mat-form-field class="full-width">
+              <input matInput placeholder="Last name" formControlName = "lastName">
+              <mat-error *ngIf="registrationForm.get('lastName').invalid">Last name is required</mat-error>
+          </mat-form-field>
+      </mat-grid-tile>
+      
+
+      <mat-grid-tile class="grid-tile-style">
+        <mat-form-field class="full-width">
+            <input matInput placeholder="House Number/Street Number" formControlName = "houseNumber">
+            <mat-error *ngIf="registrationForm.get('houseNumber').invalid">Enter house number</mat-error>
+        </mat-form-field>
+    </mat-grid-tile>
+
+    <mat-grid-tile class="grid-tile-style">
+        <mat-form-field class="full-width">
+            <input matInput placeholder="Street Name" formControlName = "streetName">
+            <mat-error *ngIf="registrationForm.get('streetName').invalid">Enter Street Name</mat-error>
+        </mat-form-field>
+    </mat-grid-tile>
+
+    <mat-grid-tile class="grid-tile-style">
+        <mat-form-field class="full-width">
+            <input matInput placeholder="Street Name" formControlName = "city">
+            <mat-error *ngIf="registrationForm.get('city').invalid">Enter City Name</mat-error>
+        </mat-form-field>
+    </mat-grid-tile>
+
+    <mat-grid-tile class="grid-tile-style">
+        <mat-form-field class="full-width">
+            <input matInput placeholder="Street Name" formControlName = "state">
+            <mat-error *ngIf="registrationForm.get('state').invalid">Enter State Name</mat-error>
+        </mat-form-field>
+    </mat-grid-tile>
+
+    <mat-grid-tile class="grid-tile-style">
+        <mat-form-field class="full-width">
+            <input matInput placeholder="Pincode" formControlName = "pincode">
+            <mat-error *ngIf="registrationForm.get('pincode').invalid">Enter Pincode</mat-error>
+        </mat-form-field>
+    </mat-grid-tile>
+
+    <mat-grid-tile class="grid-tile-style"></mat-grid-tile>
+
+      <mat-grid-tile class="grid-tile-style">
+          <mat-form-field class="full-width">
+              <input matInput placeholder="Email ID" formControlName = "emailId">
+              <mat-error *ngIf="registrationForm.get('emailId').invalid">Enter a valid email id</mat-error>
+          </mat-form-field>
+      </mat-grid-tile>
+      <mat-grid-tile class="grid-tile-style">
+          <mat-form-field class="full-width">
+              <input type="number" matInput placeholder="Phone number" formControlName = "contactNo" 
+              (change)="lengthValidation()">
+              <mat-error *ngIf="registrationForm.get('contactNo').invalid">Enter a valid phone number</mat-error>
+          </mat-form-field>
+      </mat-grid-tile>
+      <mat-grid-tile>
+          <mat-form-field class="full-width">
+              <mat-select placeholder="Occupation" formControlName = "occupation">
+                <mat-option *ngFor="let occupation of occupations" [value]="occupation.id">
+                  {{ occupation.value }}
+                </mat-option>
+              </mat-select>
+              <mat-error *ngIf="registrationForm.get('occupation').invalid">Choose your occupation</mat-error>
+          </mat-form-field>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        
+              <mat-form-field class="full-width" >
+                <input  formControlName = "dateOfBirth" matInput [max] = "date" [matDatepicker]="dp3" placeholder="Date of Birth" disabled>
+                <mat-datepicker-toggle matSuffix [for]="dp3"></mat-datepicker-toggle>
+                <mat-datepicker #dp3 disabled="false" ></mat-datepicker>
+                <mat-error *ngIf="registrationForm.get('dateOfBirth').invalid">Let us share greetings on your birthday</mat-error>
+              </mat-form-field>
+            
+      </mat-grid-tile>
+    </mat-grid-list>
+    <!-- <mat-form-field class="full-width-uname">
+        <mat-select placeholder="Donation Plan" formControlName = "plan">
+          <mat-option *ngFor="let plan of plans" [value]="plan.id">
+            {{ plan.value }}
+          </mat-option>
+        </mat-select>
+        <mat-error *ngIf="registrationForm.get('plan').invalid">Choose your donation plan</mat-error>
+      </mat-form-field>     -->
+  </form>
+  <div class="btn-style">
+  <button mat-raised-button class="register-btn-style" (click)="registerDonor()">Register</button>
+  <button mat-raised-button class="reset-btn-style" (click)="resetForm()">Reset</button>
+</div>
+</mat-card>
+  </mat-tab>
+  <mat-tab label="Existing Donor">Content 2</mat-tab>
+</mat-tab-group>
+</mat-card>

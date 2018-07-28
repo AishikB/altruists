@@ -1,0 +1,51 @@
+.mat-tab-label-active {
+   color: #00ADEE !important;
+} 
+
+.full-width-uname {
+    width: 94%;
+    padding-left: 2.5%;
+    padding-top: 2%;
+}
+
+.full-width {
+    width: 90%;
+}
+
+.form-grid-list {
+    padding-top: 2%;
+    height: 15%;
+}
+
+.grid-tile-style {
+    height: 15%;
+   
+}
+
+mat-card {
+    width: calc(100% - 70px);
+    height: calc(100% - 70px);
+  }
+
+.btn-style {
+   padding-left: 2.5%;
+   padding-bottom: 2%;
+   padding-top: 2%;
+}
+
+.register-btn-style {
+    padding-right: 6%;
+    background-color: #73B72A;
+    width: 20px;
+    color:white;
+    margin-right: 3%;
+}
+
+.reset-btn-style {
+    padding-right: 6%;
+    padding-right: 3%;
+    background-color: #EC311E;
+    width: 20px;
+    color:white;
+    margin-right: 3%;
+}

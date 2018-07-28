@@ -1,0 +1,32 @@
+.validate-tool-bar {
+    background-color: #0DB472;
+    color: white;
+}
+
+
+.full-width {
+    width: 70%;
+    padding-top: 5%;
+    padding-left: 5%;
+}
+
+
+.text-design {
+    text-align: center;
+    color:red;
+}
+
+.btn-style {
+    padding-left: 5%;
+    padding-bottom: 2%;
+    padding-top: 1%;
+ }
+ 
+ .register-btn-style {
+     padding-right: 6%;
+     background-color: #73B72A;
+     width: 20px;
+     color:white;
+     margin-right: 3%;
+ }
+ 

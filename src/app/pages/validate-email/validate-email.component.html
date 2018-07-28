@@ -1,0 +1,20 @@
+<mat-card>
+    <mat-toolbar class="validate-tool-bar">Validate Email ID</mat-toolbar>
+<mat-card>
+  <div class="text-design">
+    An email has been sent with an OTP to the email id provided by you
+  </div>
+  <form [formGroup]="validationForm">
+      <mat-form-field class="full-width">
+          <input type="number" matInput placeholder="Enter the OTP" formControlName = "emailOtp">
+          <mat-error *ngIf="validationForm.get('emailOtp').invalid">Enter the OTP</mat-error>
+      </mat-form-field>
+  </form>
+  <div class="btn-style">
+      <button mat-raised-button class="register-btn-style" [disabled] = "validationForm.invalid" (click)="validateOtp()">Validate</button>
+  </div>
+</mat-card>
+  
+    
+
+</mat-card>
